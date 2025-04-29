@@ -1,0 +1,73 @@
+.quotes-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7fafc;
+  padding: 56px 0 36px 0;
+}
+
+.quotes-box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,123,255,0.08);
+  padding: 38px 32px;
+  min-width: 340px;
+  max-width: 520px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s;
+}
+
+.quote-icon {
+  color: #007bff;
+  font-size: 1.4rem;
+  margin: 0 8px;
+}
+
+.quote-icon.left {
+  position: absolute;
+  left: 22px;
+  top: 24px;
+}
+
+.quote-icon.right {
+  position: absolute;
+  right: 22px;
+  bottom: 24px;
+}
+
+.quote-text {
+  font-size: 1.18rem;
+  color: #222;
+  font-weight: 500;
+  margin: 0 24px;
+  line-height: 2.1;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+.quotes-circles {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #e3e9f0;
+  border: 2px solid #007bff44;
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s;
+  display: inline-block;
+}
+.circle.active {
+  background: #007bff;
+  border: 2px solid #007bff;
+}
